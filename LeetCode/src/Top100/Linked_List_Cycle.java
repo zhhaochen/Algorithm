@@ -22,10 +22,3 @@ public class Linked_List_Cycle {
         return false;
     }
 }
-class ListNode{
-    ListNode next;
-    int x;
-    public ListNode(int val){
-        this.x = val;
-    }
-}

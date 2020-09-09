@@ -3,6 +3,7 @@ package Creational_Pattern.factory_method;
 import Creational_Pattern.simple_factory.Product;
 
 /**
+ * 工厂方法
  * 由子类决定要实例化哪个类。工厂方法把实例化操作推迟到子类。
  */
 

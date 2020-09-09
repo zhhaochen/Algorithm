@@ -3,6 +3,7 @@ package Creational_Pattern.builder;
 import java.util.Arrays;
 
 /**
+ * 生成器模式
  * 封装一个对象的构造过程，并允许按步骤构造。
  *
  * 比如要画多个小人，高矮胖瘦，画的步骤是一样的只是参数不一样

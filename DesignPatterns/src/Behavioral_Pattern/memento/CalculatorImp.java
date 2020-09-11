@@ -12,6 +12,7 @@ public class CalculatorImp implements Calculator {
 
     @Override
     public void restorePreviousCalculation(PreviousCalculationToCareTaker memento) {
+        // 正常应该是PreviousCalculationToCareTaker负责返回备忘录，这里因为直接实现两个接口，所以直接类型转换
         this.firstNumber = ((PreviousCalculationToOriginator) memento).getFirstNumber();
         this.secondNumber = ((PreviousCalculationToOriginator) memento).getSecondNumber();
     }

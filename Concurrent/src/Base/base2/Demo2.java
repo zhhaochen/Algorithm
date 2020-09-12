@@ -18,7 +18,7 @@ public class Demo2 implements Callable<Integer> {
         return 2;
     }
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         // 使用
         ExecutorService executor = Executors.newCachedThreadPool();
         FutureTask<Integer> futureTask = new FutureTask<>(new Demo2());

@@ -1,4 +1,4 @@
-package Base.base3;
+package Base.base3_group_priority;
 
 /**
  * Java中线程优先级可以指定，范围是1~10。

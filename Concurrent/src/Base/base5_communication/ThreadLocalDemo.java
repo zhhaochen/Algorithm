@@ -1,4 +1,4 @@
-package Base.base5;
+package Base.base5_communication;
 
 /**
  * ThreadLocal是一个本地线程副本变量工具类。内部是一个弱引用的Map来维护。

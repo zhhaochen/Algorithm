@@ -1,4 +1,4 @@
-package Base.base5;
+package Base.base5_communication;
 
 /**
  * 基于“锁”的方式，线程需要不断地去尝试获得锁，如果失败了，再继续尝试。这可能会耗费服务器资源。

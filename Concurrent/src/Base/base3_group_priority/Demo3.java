@@ -1,4 +1,4 @@
-package Base.base3;
+package Base.base3_group_priority;
 
 public class Demo3 {
     // 线程组统一异常处理

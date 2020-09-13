@@ -1,4 +1,4 @@
-package Base.base3;
+package Base.base3_group_priority;
 
 import java.util.stream.IntStream;
 

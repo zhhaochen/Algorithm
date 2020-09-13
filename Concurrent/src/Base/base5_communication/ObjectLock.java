@@ -1,4 +1,4 @@
-package Base.base5;
+package Base.base5_communication;
 
 /**
  * 对象锁示例

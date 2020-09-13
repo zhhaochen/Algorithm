@@ -1,4 +1,4 @@
-package Base.base3;
+package Base.base3_group_priority;
 
 /**
  * Java提供一个线程调度器来监视和控制处于RUNNABLE状态的线程,线程的调度策略采用抢占式，优先级高的线程比优先级低的线程会有更大的几率优先执行。

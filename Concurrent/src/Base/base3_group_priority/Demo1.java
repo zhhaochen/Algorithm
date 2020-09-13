@@ -1,4 +1,4 @@
-package Base.base3;
+package Base.base3_group_priority;
 
 /**
  * Java中用ThreadGroup来表示线程组，我们可以使用线程组对线程进行批量控制。

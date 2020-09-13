@@ -1,4 +1,4 @@
-package Base.base5;
+package Base.base5_communication;
 
 import java.io.IOException;
 import java.io.PipedReader;

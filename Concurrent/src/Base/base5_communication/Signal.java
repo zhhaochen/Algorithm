@@ -1,4 +1,4 @@
-package Base.base5;
+package Base.base5_communication;
 
 /**
  * volatile关键字能够保证内存的可见性，如果用volatile关键字声明了一个变量，

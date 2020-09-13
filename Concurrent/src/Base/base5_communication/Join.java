@@ -1,4 +1,4 @@
-package Base.base5;
+package Base.base5_communication;
 
 /**
  * join()方法是Thread类的一个实例方法。它的作用是让当前线程陷入“等待”状态，等join的这个线程执行完成后，再继续执行当前线程。

@@ -1,4 +1,4 @@
-package Base.base5;
+package Base.base5_communication;
 
 // 一个无锁的示例
 public class NoneLock {

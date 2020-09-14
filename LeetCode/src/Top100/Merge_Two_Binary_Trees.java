@@ -27,13 +27,12 @@ public class Merge_Two_Binary_Trees {
             return t1;
         }
 
-        if(t1 != null && t2 == null){
+        // 到达此处说明有其中至少一个是null，先判断t1
+        if(t1 != null){
             return t1;
         }
 
-        if(t1 == null && t2 != null){
-            return t2;
-        }
-        return null;
+        // 到达此处无论t2是不是null都可以直接返回
+        return t2;
     }
 }

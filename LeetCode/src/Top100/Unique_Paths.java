@@ -19,4 +19,18 @@ public class Unique_Paths {
         }
         return dp[m - 1][n - 1];
     }
+    // 耗费内存更小方法，只需要一个 2 x n的数组，因为当前状态只与上和左有关
+    public int uniquePaths2(int m, int n) {
+        int[][] dp = new int[2][n];
+        for (int j = 0; j < n; j++) {
+            dp[0][j] = 1;
+        }
+        dp[1][0] = 1;
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[i % 2][j] = dp[i % 2][j - 1] + dp[(i - 1) % 2][j];
+            }
+        }
+        return dp[(m - 1) % 2][n - 1];
+    }
 }

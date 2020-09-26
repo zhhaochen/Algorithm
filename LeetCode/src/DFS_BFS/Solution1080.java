@@ -1,4 +1,4 @@
-package Depth_First_Search;
+package DFS_BFS;
 
 /**
  * 2019.11.1

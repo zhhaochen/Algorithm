@@ -26,6 +26,7 @@ public class Solution1312 {
         for (int i = len - 2; i >= 0; i--) {
             for (int j = 1; j < len; j++) {
                 if (i >= j) {
+                    // 或者令 j = i + 1
                     continue;
                     //dp[i][j] = 0;
                 }

@@ -17,7 +17,7 @@ public class Solution300 {
         int[] dp = new int[len];
         int max = 1;
         // 状态转移，从后往前
-        for (int i = 1; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             dp[i] = 1;
             for (int j = 0; j < i; j++) {
                 if (nums[i] > nums[j]) {

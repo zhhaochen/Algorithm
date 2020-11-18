@@ -28,4 +28,28 @@ public class Trapping_Rain_Water {
         }
         return res;
     }
+
+    // 双指针方法，只需要遍历一遍
+    public int trap2(int[] height) {
+        int len = height.length;
+        int left = 0;
+        int right = len-1;
+        int mx = 0;
+        int res = 0;
+        while(left < right){
+            mx = Math.min(height[left], height[right]);
+            if(mx == height[left]){
+                left++;
+                while(left < right && height[left] < mx){
+                    res += (mx - height[left++]);
+                }
+            }else{
+                right--;
+                while(left < right && height[right] < mx){
+                    res += (mx - height[right--]);
+                }
+            }
+        }
+        return res;
+    }
 }

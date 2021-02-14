@@ -10,6 +10,8 @@ import java.util.Random;
  * 则后面需要都不选中
  * p = 1/a * (a/a+1) * (a+1/a+2) * ... * (n-1/n) = 1/n
  * 所以总体来说就是总概率
+ * 当前是否选中与之前的无关，只与之后的有关，这样才能保证等概率
+ * 所以只要是满足条件，就要替换picked
  */
 public class RandomPick {
 

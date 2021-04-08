@@ -9,22 +9,16 @@ package Dynamic_Programming;
  */
 public class Solution300 {
     public int lengthOfLIS(int[] nums) {
-        if (nums == null || nums.length == 0) {
-            return 0;
-        }
-        int len = nums.length;
-        // dp[i][j]代表数组nums[i,...,j]中最长升序列的长度，返回应该为dp中最大的值
-        int[] dp = new int[len];
+        if (nums == null || nums.length == 0) return 0;
+        // dp[i] 表示以选取了 nums[i]结尾的最长子序列个数
+        int[] dp = new int[nums.length];
+        dp[0] = 1;
         int max = 1;
-        // 状态转移，从后往前
-        for (int i = 0; i < len; i++) {
-            dp[i] = 1;
-            for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j]) {
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
-                }
+        for (int i = 1; i < nums.length; i++){
+            for (int j = 0; j < i; j++){
+                if (nums[i] > nums[j]) dp[i] = Math.max(dp[i], dp[j] + 1);
             }
-            if (dp[i] > max) max = dp[i];
+            max = Math.max(max, dp[i]);
         }
         return max;
     }
